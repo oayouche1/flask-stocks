@@ -17,7 +17,8 @@ def hello():
 def graph():
   stock = request.args.get('stock', '')
   index = request.args.get('index', '4')
-  apiURL = 'https://www.quandl.com/api/v3/datasets/WIKI/%s.json?column_index=%s' % (stock,index)
+  apiURL = 'https://www.quandl.com/api/v3/datasets/WIKI/%s.json?column_index=%s&api_key=aU6JXbtrQEdfcsmhMWnN' % (stock,index)
+  print(apiURL)
   r = requests.get(apiURL)
   x = r.json()
   df = pd.DataFrame(x['dataset']['data'])
