@@ -1,5 +1,5 @@
-gunicorn
-requests
-Flask
-pandas
-bokeh
+gunicorn==19.9.0
+requests==2.20.0
+Flask==0.12
+pandas==0.19.2
+bokeh==1.2.0
